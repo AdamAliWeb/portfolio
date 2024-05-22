@@ -1,0 +1,18 @@
+.skills-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills-link {
+    width: 30%;
+    margin-block: 2rem;
+}
+
+@media screen and (min-width: 1080px) {
+    .skills-link {
+        width: 15%;
+        margin-block: 3rem;
+        margin-inline: 1rem;
+    }
+}

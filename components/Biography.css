@@ -1,0 +1,65 @@
+.biography-section {
+    background-color: var(--first-pigment);
+    padding: 0.5rem;
+    margin-block: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.biography-btn {
+    display: flex;
+}
+
+.biography-btn > h3 {
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.biography-btn.--active > h3 {
+    color: var(--first-yellow);
+}
+
+.biography-sign {
+    margin: 0;
+    padding-right: 0.5rem;
+}
+
+.biography-title {
+    margin: 0;
+}
+
+.biography-desc {
+    padding: 0.5rem;
+    padding-left: 1rem;
+    display: none;
+    transform-origin: 0 0;
+    animation: Apparition 0.5s ease-in forwards;
+}
+
+.biography-desc.--active {
+    display: block;
+}
+
+.biography-desc p {
+    margin-block: 0.5rem;
+}
+
+@keyframes Apparition {
+    0% {
+        opacity: 0;
+        transform: scaleY(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .biography-section {
+        padding: 1rem;
+    }
+
+    .biography-desc {
+        padding-inline: 2rem;
+    }
+}

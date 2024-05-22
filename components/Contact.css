@@ -1,0 +1,22 @@
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    width: 34%;
+    padding: 0.5rem;
+    margin-block: 2rem;
+}
+
+@media screen and (min-width: 1080px) {
+    .contact-section {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .contact-link {
+        width: 13%;
+    }
+}

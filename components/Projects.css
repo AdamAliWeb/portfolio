@@ -1,0 +1,61 @@
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+    margin-block: 4rem;
+    background-color: var(--first-pigment);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project-img {
+    width: 80%;
+}
+
+.modal-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal-link {
+    width: 50%;
+}
+
+.modal-img {
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 1080px) {
+    .projects-section {
+        display: flex;
+    }
+
+    .project-img {
+        width: 70%;
+    }
+
+    .project {
+        margin-inline: 2rem;
+        padding-block: 5rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .modal-links {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .modal-link {
+        width: 40%;
+    }
+}

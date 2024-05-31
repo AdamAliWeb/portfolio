@@ -9,6 +9,10 @@
     display: flex;
 }
 
+.biography-btn:hover {
+    color: var(--second-pigment);
+}
+
 .biography-btn > h3 {
     transition: all 0.3s ease-in;
     cursor: pointer;

@@ -7,6 +7,11 @@
 .skills-link {
     width: 30%;
     margin-block: 2rem;
+    transition: all 0.3s ease-in;
+}
+
+.skills-link:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 1080px) {

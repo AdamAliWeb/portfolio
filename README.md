@@ -4,5 +4,10 @@ Hey, this is my porfolio. I created it with dedication, and I would appreciate i
 
 ## Issues to fix
 
--   Update Portfolio Banner
--   Compress Biography sections into a component
+-   Make more animations to the dropdowns
+
+-   Add a scroll in view animaiton
+
+-   Organize and comment the code
+
+-   Add a close button to the modal

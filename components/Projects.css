@@ -18,15 +18,21 @@
     width: 80%;
 }
 
+.modal-desc {
+    max-width: 400px;
+    margin-bottom: 3rem;
+}
+
 .modal-links {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
     gap: 1rem;
 }
 
 .modal-link {
-    width: 50%;
+    width: 25%;
+    min-width: 75px;
 }
 
 .modal-img {
@@ -45,17 +51,5 @@
     .project {
         margin-inline: 2rem;
         padding-block: 5rem;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    .modal-links {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-    }
-
-    .modal-link {
-        width: 40%;
     }
 }

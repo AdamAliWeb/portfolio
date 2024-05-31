@@ -1,11 +1,5 @@
 import "./Contact.css";
 
-import linkedin from "../src/assets/linkedin.svg";
-import github from "../src/assets/github.svg";
-import cv from "../src/assets/cv.svg";
-import twitter from "../src/assets/twitter.svg";
-import instagram from "../src/assets/instagram.svg";
-
 export default function Contact() {
     return (
         <section id="contact" className="content-section">
@@ -16,14 +10,14 @@ export default function Contact() {
                     className="icon-link contact-link"
                     href="https://www.linkedin.com/in/adam-ali-413660261/"
                 >
-                    <img src={linkedin} alt="Linkedin" />
+                    <img src="./assets/linkedin.svg" alt="Linkedin" />
                 </a>
                 <a
                     target="_blank"
                     className="icon-link contact-link"
                     href="https://github.com/AdamAliWeb"
                 >
-                    <img src={github} alt="Github" />
+                    <img src="./assets/github.svg" alt="Github" />
                 </a>
 
                 <a
@@ -31,21 +25,21 @@ export default function Contact() {
                     className="icon-link contact-link"
                     href="https://x.com/AdamAliWeb"
                 >
-                    <img src={twitter} alt="Twitter" />
+                    <img src="./assets/twitter.svg" alt="Twitter" />
                 </a>
                 <a
                     target="_blank"
                     className="icon-link contact-link"
                     href="https://www.instagram.com/adamaliweb/"
                 >
-                    <img src={instagram} alt="Instagram" />
+                    <img src="./assets/instagram.svg" alt="Instagram" />
                 </a>
                 <a
                     target="_blank"
                     className="icon-link contact-link"
                     href="https://adamaliweb.com/assets/adam-ali-cv.pdf"
                 >
-                    <img src={cv} alt="CV" />
+                    <img src="./assets/cv.svg" alt="CV" />
                 </a>
             </article>
         </section>

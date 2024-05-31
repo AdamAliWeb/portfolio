@@ -7,9 +7,7 @@ export default function ModalWindow({ children, modalState, closeModal }) {
             onClick={() => closeModal()}
         >
             <section
-                className={`modal-window card ${
-                    modalState ? "modal-open" : ""
-                }`}
+                className={`modal-window ${modalState ? "modal-open" : ""}`}
                 onClick={(e) => e.stopPropagation()}
             >
                 {children}

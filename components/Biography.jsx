@@ -17,7 +17,7 @@ export default function Biography() {
     useEffect(() => {
         if (dropdown !== 0) {
             window.scrollTo({
-                top: references[dropdown - 1].current?.offsetTop - 150,
+                top: references[dropdown - 1].current?.offsetTop,
                 left: 0,
                 behavior: "smooth",
             });

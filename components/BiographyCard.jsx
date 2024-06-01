@@ -4,6 +4,7 @@ export default function BiographyCard({
     handleDropdown,
     reference,
     title,
+
     children,
 }) {
     return (

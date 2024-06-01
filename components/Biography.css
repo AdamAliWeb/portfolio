@@ -36,11 +36,13 @@
     padding-left: 1rem;
     display: none;
     transform-origin: 0 0;
-    animation: Apparition 0.5s ease-in forwards;
+    animation: ApparitionReverse 0.5s ease-in-out forwards;
 }
 
 .biography-desc.--active {
     display: block;
+    transition: all 0.3s ease-in;
+    animation: Apparition 0.5s ease-in-out forwards;
 }
 
 .biography-desc p {
@@ -52,9 +54,26 @@
         opacity: 0;
         transform: scaleY(0.9);
     }
+    50% {
+        opacity: 0;
+    }
     100% {
         opacity: 1;
         transform: scaleY(1);
+    }
+}
+
+@keyframes ApparitionReverse {
+    0% {
+        height: 300px;
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    100% {
+        height: 0;
+        opacity: 0;
+        transform: scaleY(0.9);
     }
 }
 

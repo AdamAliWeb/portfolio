@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import ParticlesComponent from "../components/ParticlesComponent";
 import HeroArea from "../components/HeroArea";
@@ -9,6 +9,22 @@ import Contact from "../components/Contact";
 import Header from "../components/Header";
 
 function App() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            } else {
+                entry.target.classList.remove("show");
+            }
+        });
+    });
+
+    useEffect(() => {
+        document
+            .querySelectorAll(".content-section")
+            .forEach((el) => observer.observe(el));
+    });
+
     return (
         <>
             <ParticlesComponent id="particles" />

@@ -5,7 +5,7 @@ export default function HeroArea() {
         <section id="home" className="hero-area">
             <img
                 className="hero-img"
-                src="./assets/adam-ali.png"
+                src="./assets/adam-ali.webp"
                 alt="Adam Ali"
             />
             <article className="title-container">

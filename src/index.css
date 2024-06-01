@@ -132,9 +132,7 @@ img {
 .content-section {
     width: 100%;
     padding-block: 10rem;
-    /* animation: fade linear both;
-    animation-timeline: view();
-    animation-range: entry 60% contain 40%; */
+    transition: all 1s;
 }
 
 .content-section > h2 {
@@ -144,12 +142,3 @@ img {
 .icon-link:hover {
     filter: invert(0.9);
 }
-
-/* @keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-} */

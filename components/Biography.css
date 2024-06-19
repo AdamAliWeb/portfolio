@@ -7,10 +7,15 @@
 
 .biography-btn {
     display: flex;
+    align-items: center;
 }
 
 .biography-btn:hover {
     color: var(--second-pigment);
+}
+
+.biography-btn:hover .biography-sign {
+    fill: var(--second-pigment);
 }
 
 .biography-btn > h3 {
@@ -32,24 +37,56 @@
 }
 
 .biography-desc {
-    padding: 0.5rem;
-    padding-left: 1rem;
-    display: none;
-    transform-origin: 0 0;
-    animation: ApparitionReverse 0.5s ease-in-out forwards;
+    /* padding: 0.5rem;
+    padding-left: 1rem; */
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    overflow: hidden;
+    padding-inline: 1rem;
+    /* display: none; */
+    /* transform-origin: 0 0; */
+    transition: all 0.3s ease-in;
+    /* animation: ApparitionReverse 0.5s ease-in-out forwards; */
 }
 
 .biography-desc.--active {
-    display: block;
-    transition: all 0.3s ease-in;
-    animation: Apparition 0.5s ease-in-out forwards;
+    /* display: block;
+    animation: Apparition 0.5s ease-in-out forwards; */
+    grid-template-rows: 1fr;
+    opacity: 1;
 }
 
-.biography-desc p {
+/* Card */
+.biography-desc-content {
     margin-block: 0.5rem;
+    overflow: hidden;
 }
 
-@keyframes Apparition {
+.biography-sign {
+    flex-shrink: 0;
+    fill: var(--first-white);
+    padding: 0;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+.biography-sign-piece {
+    transform-origin: center;
+    transition: all 0.3s ease-out;
+}
+
+.biography-sign-piece.inverted {
+    transform: rotate(90deg);
+}
+
+.biography-btn.--active .biography-sign-piece {
+    transform: rotate(180deg);
+    fill: var(--first-yellow);
+}
+
+/* @keyframes Apparition {
     0% {
         opacity: 0;
         transform: scaleY(0.9);
@@ -75,7 +112,7 @@
         opacity: 0;
         transform: scaleY(0.9);
     }
-}
+} */
 
 @media screen and (min-width: 1080px) {
     .biography-section {

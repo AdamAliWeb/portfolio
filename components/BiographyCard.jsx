@@ -21,6 +21,27 @@ export default function BiographyCard({
                     }
                 }}
             >
+                <svg
+                    className="biography-sign"
+                    width="32"
+                    height="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <rect
+                        y="15"
+                        width="32"
+                        height="2"
+                        rx="1"
+                        className="biography-sign-piece"
+                    />
+                    <rect
+                        y="15"
+                        width="32"
+                        height="2"
+                        rx="1"
+                        className="biography-sign-piece inverted"
+                    />
+                </svg>{" "}
                 <h3 className="biography-title">{title}</h3>
             </div>
 
@@ -29,7 +50,7 @@ export default function BiographyCard({
                     dropdown === dropdownNum ? "--active" : ""
                 }`}
             >
-                {children}
+                <div className="biography-desc-content">{children}</div>
             </div>
         </div>
     );

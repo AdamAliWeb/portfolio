@@ -15,13 +15,13 @@ export default function Biography() {
     const references = [ref1, ref2, ref3, ref4, ref5];
 
     useEffect(() => {
-        if (dropdown !== 0) {
-            window.scrollTo({
-                top: references[dropdown - 1].current?.offsetTop,
-                left: 0,
-                behavior: "smooth",
-            });
-        }
+        // if (dropdown !== 0) {
+        //     window.scrollTo({
+        //         top: references[dropdown - 1].current?.offsetTop - 120,
+        //         left: 0,
+        //         behavior: "smooth",
+        //     });
+        // }
     }, [
         ref1.current?.clientHeight,
         ref2.current?.clientHeight,

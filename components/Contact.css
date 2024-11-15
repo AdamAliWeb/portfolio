@@ -8,6 +8,11 @@
     width: 34%;
     padding: 0.5rem;
     margin-block: 2rem;
+    transition: all 0.3s ease-in;
+}
+
+.contact-link:hover {
+    filter: invert(0.9);
 }
 
 @media screen and (min-width: 1080px) {

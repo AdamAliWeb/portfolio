@@ -35,6 +35,13 @@ export default function Header() {
                 <a
                     className="nav-menu-link"
                     onClick={() => setNavMenu(false)}
+                    href="#experience"
+                >
+                    Experience
+                </a>
+                <a
+                    className="nav-menu-link"
+                    onClick={() => setNavMenu(false)}
                     href="#projects"
                 >
                     Projects

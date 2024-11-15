@@ -1,0 +1,33 @@
+.work-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-card {
+    border-radius: 3rem;
+    padding: 2rem;
+    width: 100%;
+    margin-inline: 1rem;
+    margin-block: 3rem;
+    background-color: var(--first-pigment);
+}
+
+.work-card h4 {
+    margin-block: 1rem;
+}
+
+.work-card img {
+    border-radius: 1rem;
+    transition: all 0.3s ease-in;
+}
+
+.work-card img:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 1080px) {
+    .work-card {
+        width: 45%;
+    }
+}

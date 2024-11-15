@@ -4,8 +4,6 @@ Hey, this is my porfolio. I created it with dedication, and I would appreciate i
 
 ## Issues to fix
 
-<!-- -   Add a proper dropdown animation -->
-
 -   Add a scroll in view animaiton
 
 -   Organize and comment the code

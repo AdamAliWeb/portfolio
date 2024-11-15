@@ -1,13 +1,29 @@
-.skills-section {
+.skills-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
+.skills-title {
+    text-align: center;
+}
+
 .skills-link {
     width: 30%;
-    margin-block: 2rem;
+    padding: 0.25rem;
     transition: all 0.3s ease-in;
+}
+
+.skills-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    margin-bottom: 3rem;
+    border-radius: 2rem;
+    background-color: var(--first-pigment);
 }
 
 .skills-link:hover {
@@ -17,7 +33,10 @@
 @media screen and (min-width: 1080px) {
     .skills-link {
         width: 15%;
-        margin-block: 3rem;
         margin-inline: 1rem;
+    }
+
+    .skills-section {
+        border-radius: 4rem;
     }
 }

@@ -138,7 +138,3 @@ img {
 .content-section > h2 {
     text-align: center;
 }
-
-.icon-link:hover {
-    filter: invert(0.9);
-}

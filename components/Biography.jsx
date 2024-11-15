@@ -97,12 +97,14 @@ export default function Biography() {
                     title={"What experience do I have?"}
                 >
                     <p>
-                        I don't have industrial experience or have not worked in
-                        a company yet. However, I have completed several
-                        projects, which I share on this page. These projects
-                        showcase my experience and skills in web development. I
-                        am currently looking for job opportunities in the field
-                        to gain more experience.
+                        I have 2 years of remote experience working for a
+                        Ukrainian company called SoloWay. My role focused on
+                        Frontend development and web design, where I primarily
+                        worked with a vanilla stack using JavaScript, HTML, and
+                        CSS, occasionally incorporating small libraries. I had
+                        to leave the position because it was part-time, and the
+                        salary was relatively low as it was designed for
+                        individuals with minimal experience at the start.
                     </p>
                 </BiographyCard>
 
@@ -118,12 +120,11 @@ export default function Biography() {
                         Essentially, I am looking for a job, but in the
                         meantime, I am doing other things. I am updating the
                         design of my projects because some of them no longer
-                        meet my standards. Soon, you will see them improved. I
-                        am also learning new technologies to enhance my skills.
-                        Recently, I learned TypeScript, and I plan to learn
-                        Next.js as well. After this and some backend learning, I
-                        will develop more projects to solve common problems that
-                        I and people around me face.
+                        meet my standards. I am also learning new technologies
+                        to enhance my skills. Recently, I learned TypeScript,
+                        and I plan to learn Next.js as well. After this and some
+                        backend learning, I will develop more projects to solve
+                        common problems that I and people around me face.
                     </p>
                 </BiographyCard>
 

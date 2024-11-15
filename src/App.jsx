@@ -7,6 +7,7 @@ import Skills from "../components/Skills";
 import Biography from "../components/Biography";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
+import Experience from "../components/Experience";
 
 function App() {
     const observer = new IntersectionObserver((entries) => {
@@ -32,6 +33,7 @@ function App() {
             <main className="main-content">
                 <HeroArea />
                 <Biography />
+                <Experience />
                 <Projects />
                 <Skills />
                 <Contact />
